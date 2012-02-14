@@ -254,6 +254,47 @@ a.zorros_app_button:hover {
   border-left: 1px solid #535C5F;
 }
 
+/* adding for the submenus */
+
+.menu li ul {
+	display: none;
+	width: 12em; /* Width to help Opera out */
+	
+}
+
+.menu li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li:hover li {
+	float: none;
+	text-transform: none;
+}
+
+.menu li:hover li a {
+	background-color: #C3D8DF;
+	border-right: 1px solid #535C5F;
+	  border-bottom: 1px solid #535C5F;
+	  border-top: 1px solid #C2CDCF;
+	  border-left: 1px solid #C2CDCF;
+	color: #000;
+	text-transform: none;
+	font-weight: normal;
+}
+
+.menu li li a:hover {
+	color: #25AAE1;
+	  border-right: 1px solid #C2CDCF;
+	  border-bottom: 1px solid #C2CDCF;
+	  border-top: 1px solid #535C5F;
+	  border-left: 1px solid #535C5F;
+}
+
+/* end of the submenus */
+
 .menu2 ul {
   margin: 0 0 0 0;
   padding: 0;
