@@ -1,0 +1,127 @@
+/* =forms
+------------------------------------------------------------------*/
+form, fieldset, legend, form h3{
+	border:0; 
+	margin:0; 
+	padding:0; 
+}
+form p{
+	margin:0 20px 10px 0;
+}
+form .checkbox p{
+	margin-bottom:0;
+}
+form br{
+	display:none;
+}
+fieldset{
+	background:url(/images/gutter.gif) repeat-x 0 0;
+	padding-top:18px;
+}
+form h3{
+	font-size:14px;
+	margin-bottom:18px;
+}
+label{
+	display: block;
+	float:left;
+	line-height:1.9;
+	margin-right:10px;
+	width:100px;
+}
+label:after, 
+.checkbox h3:after{
+	content:':'; 
+} 
+input[type=text], input[type=password]{ 
+	padding:4px;
+	width:250px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+form abbr{
+	border:0;   
+	color:#AA1C00;
+	cursor:help;
+	font-style:normal;
+	padding:0 3px;  
+}
+
+/* radio & checkbox fieldsets */
+label input{
+	background:transparent;
+	margin-right:4px;
+	width:auto;
+}
+#comment label{
+	margin-bottom:9px;
+}
+
+.checkbox label{
+	display:inline;
+	float:none;
+	margin:0;
+	text-align:left;
+	width:auto;
+}
+
+.checkbox label:after{
+	content:'';   
+}
+.checkbox input{
+	width:auto;
+}
+
+.btn a{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:none repeat scroll 0 0 #25AAE1;
+	border:1px solid #CCC;
+	display:block;
+	float:left;
+	font-weight:bold;
+	padding:3px 10px;
+	text-decoration:none;
+	width:auto;
+	color:#FFFFFF;
+}
+
+/* notes & error handling */
+.validation-advice{
+	font-family:arial;
+	background:url(/images/bullet-error.png) no-repeat 0 0;
+	color:#CC0000;
+	font-size:11px;
+	font-style:italic;
+	font-weight:normal;
+	margin:6px 0 0 110px;
+	padding:0 3px 0 16px;
+}
+.note{
+	color:#666;
+	font-size:0.8333em;
+	font-weight:normal;
+	margin:6px 0 0 110px;
+}
+.contact_form_notice{
+	clear:left;
+	font-size:11px;
+}
+.mailer-error{/* when somebody enters a non-existent e-mail adress */
+	background:#f7f7b5;
+	border:1px solid red;
+	padding:9px;
+	margin-bottom:18px
+}
+
+fieldset.mailbox input{
+	width:150px;
+}
+p.blogposts{
+	margin-left:-110px;
+}
+
+.settings label{
+	width:140px;
+}

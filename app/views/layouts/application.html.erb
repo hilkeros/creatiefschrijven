@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creatiefschrijven</title>
+  	<%= stylesheet_link_tag 'blueprint/screen' %>
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%= stylesheet_link_tag 'screen' %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/top_menu' %>
+
+<div class="top_banner">
+  <div class="container">
+    <div class="span-6">
+      <%= link_to image_tag('logo.png', :size  => "100x100"), "#" %>
+    </div>
+    <div class="span-18 last">
+      <hr class="space" />
+      
+        <%= render 'layouts/main_menu' %>
+    </div>
+  </div>  
+</div>
+
+<div class="pre_container">
+  <div class="container">
+    <div class="span-24 prepend-top">
+      <%= yield :pre_container %>
+    </div>
+  </div>
+</div>
+
+<hr class="space"/>
+
+<div class="container prepend-top">
+  <div class="span-24 last">
+    
+    <%= yield %>
+  </div>
+</div>
+
+<%= render 'layouts/footer' %>
+
+</body>
+</html>

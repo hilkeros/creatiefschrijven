@@ -1,0 +1,746 @@
+/* blueprint css overrides */
+/* ---------------------------------------------- */
+
+
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial;
+}
+
+p{
+  line-height:1,5em;
+}
+
+.box {
+  background-color:#EFEFEF;
+}
+
+.notice {
+  color: #264409;
+  border-color:#C6D880;
+  background-color:#E6EFC2;
+}
+
+/* General CSS, to be reused as often across screens to keep it simple */
+/* ---------------------------------------------- */
+
+.z_OK{
+  color:green;
+}
+
+.z_info{
+  color:orange;
+}
+
+.z_error{
+  color:red;
+}
+
+
+.zorros_hr{
+  background-image:url("/images/hr.png");
+  background-repeat:repeat-x;
+  height:2px;
+  width:100%;
+  clear:both;
+  font-size:0;
+  margin:14px 0;
+}
+
+a {
+  color:#25AAE1;
+  text-decoration : none;
+}
+
+h1 {
+  font-weight:bold;
+}
+
+.z_textCenter{
+  text-align:center;
+}
+
+.z_textRight{
+  text-align:right;
+}
+
+.z_textShadow{
+  text-shadow: 0px 1px 0px white;
+}
+
+.f_right {
+  float:right;
+}
+
+.f_left {
+  float:left;
+}
+.zorros_button {
+  -moz-border-radius: 5px 5px 5px 5px;
+  background-color: #f5d033;
+  border: 2px solid #ac8e0f;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 10px;
+  background-image:url("/images/button_back.jpg");
+  background-repeat:repeat-x;
+  background-position:bottom left;
+}
+
+.cs_button:hover {
+  color:yellow;
+}
+
+.cs_button {
+  -moz-border-radius: 5px 5px 5px 5px;
+  background-color: #f5d033;
+  border: 2px solid #ac8e0f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 10px;
+  background-image:url("/images/button_back.jpg");
+  background-repeat:repeat-x;
+  background-position:bottom left;
+}
+
+.zorros_button:hover {
+  color:yellow;
+}
+
+a.zorros_app_button {
+  -moz-border-radius: 2px 2px 2px 2px;
+  background-color: #8EA6AF;
+  border: 1px solid #6D909F;
+  color: white;
+  font-weight: bold;
+  padding:5px;
+  line-height:26px;
+}
+
+
+a.zorros_app_button:hover {
+  border-color:black;
+}
+
+.z_with_border{
+  border:solid 2px #DDDDDD;
+}
+
+.toggled { display: none; }
+
+.toggle {
+  display: block;
+  cursor:pointer;
+  background-image: url(/images/medialoot-icons/PNG_12/icon_18.png);
+  height: 12px;
+  width: 12px;
+  float: right;
+ }
+
+ .toggle_min {
+   background-image: url(/images/medialoot-icons/PNG_12/icon_17.png);
+}
+
+.ajax_loading {
+  display:none;
+  margin:0px 2px;
+}
+
+/* All the rest, specific stuff. The less there is, the better. */
+/* ---------------------------------------------- */
+
+.footer{
+  background-color:#EFEFEF;
+  border-top:solid 1px #B4B4B4;
+  margin-top:50px;
+}
+
+
+.pre_container{
+  background-color:#C3D8DF;
+  background-image:url("/images/pre_container_back.jpg");
+  border-bottom:solid 1px #b0c6cf;
+  border-top:solid 1px #dbebf1;
+}
+
+.pre_container h1 {
+  font-family:Georgia;
+}
+
+.top_banner{
+  background-color:#659BB2;
+}
+
+.topmenu{
+  background-color:#3F3F3F;
+  color:#DDDDDD;
+  border-bottom:solid 1px #C7D8DF;
+  text-transform:capitalize;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-weight:bold;
+}
+
+.topmenu a{
+  text-decoration:none;
+  color:#DDDDDD;
+  padding-left:22px;
+}
+
+.topmenu a:hover {
+  text-decoration:none;
+  color: #989898;
+}
+
+.menu ul {
+  float: right;
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  float:left;
+}
+
+.menu li a {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  text-transform:uppercase;
+  display: block;
+  padding: 4px 8px;
+  margin-left:4px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color:#74AABF;
+  border-right: 1px solid #535C5F;
+  border-bottom: 1px solid #535C5F;
+  border-top: 1px solid #C2CDCF;
+  border-left: 1px solid #C2CDCF;
+}
+
+.menu li.current a {
+  color: #fff;
+  border-right: 1px solid #C2CDCF;
+  border-bottom: 1px solid #C2CDCF;
+  border-top: 1px solid #535C5F;
+  border-left: 1px solid #535C5F;
+}
+
+
+.menu a:hover {
+  color: #fff;
+  border-right: 1px solid #C2CDCF;
+  border-bottom: 1px solid #C2CDCF;
+  border-top: 1px solid #535C5F;
+  border-left: 1px solid #535C5F;
+}
+
+.menu a:active {
+  color: white;
+}
+
+.menu a:focus {
+  color: white;
+  border-right: 1px solid #C2CDCF;
+  border-bottom: 1px solid #C2CDCF;
+  border-top: 1px solid #535C5F;
+  border-left: 1px solid #535C5F;
+}
+
+.menu2 ul {
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+  float:right;
+}
+
+.menu2 li {
+  float:left;
+}
+
+.menu2 li a {
+  text-transform:uppercase;
+  display: block;
+  margin:15px 0 15px 15px;
+  text-decoration: none;
+  color:white;
+}
+
+.menu2 li.current a {
+  color:#111;
+}
+
+.menu2 a:hover {
+  color:#111;
+}
+
+.menu2 a:active {
+  background-color:#EFEFEF;
+}
+
+
+.menu3 ul {
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu3 li {
+  float:left;
+}
+
+.menu3 li a {
+  text-transform:uppercase;
+  display: block;
+  padding: 10px;
+  margin-right:4px;
+  text-decoration: none;
+  font-weight: bold;
+  color:#111111;
+}
+
+.menu3 li.current a {
+  background-color:#EFEFEF;
+}
+
+.menu3 a:hover {
+  background-color:#EFEFEF;
+}
+
+.menu3 a:active {
+  background-color:#EFEFEF;
+}
+
+.menu3 a:focus {
+  background-color:#EFEFEF;
+}
+
+
+.search {
+  color:#000000;
+  padding-top:10px;
+}
+
+
+#error-oops{
+  color : #25AAE1;
+  font-size : 18px;
+  font-family: arial;
+  text-align : left;
+  padding : 50px 0px 20px 40px;
+  letter-spacing:1px;
+
+}
+
+#error-text{
+  font-size : 14px;
+  font-family: arial;
+  text-align : left;
+  padding :0px 0px 10px 40px;
+  letter-spacing:1px;
+}
+
+#error-form{
+  font-size : 14px;
+  font-family: arial;
+  text-align : left;
+  padding-left : 40px;
+  letter-spacing:1px;
+}
+
+.errorExplanation ul{
+  list-style:square;
+  padding-left:20px;
+}
+.errorExplanation, .error{
+  margin:10px 0;
+  padding:5px;
+  background-color:#eeafb4;
+}
+.errorExplanation h2, .error h2{
+  padding-top:10px;
+}
+
+/* tables */
+
+table {
+  background-color:#EFEFEF;
+  border:solid 1px #DFDFDF;
+  color:#666;
+}
+
+thead th {
+  background-color:#DFDFDF;
+  border-left:solid 1px #FFFFFF;
+  border-top:solid 1px #FFFFFF;
+  border-bottom:solid 1px #CFCFCF;
+  border-right:solid 1px #CFCFCF;
+}
+
+table tr td {
+  padding:4px 4px;
+  vertical-align: bottom;
+  text-align:left;
+}
+
+table tr td#myspace{
+  padding-top: 70px;
+  vertical-align : bottom;
+  text-align:left;
+}
+
+table tr td#facebook{
+  padding-top: 56px;
+  vertical-align : bottom;
+  text-align:left;
+}
+
+table tr td#youtube{
+  padding-top: 30px;
+  vertical-align : bottom ;
+  text-align:left;
+}
+
+table tr td#lastfm{
+  padding-top: 82px;
+  vertical-align : bottom ;
+  text-align:left;
+}
+
+
+table tr td.center {
+  padding:4px 4px;
+  vertical-align:top;
+  text-align:center;
+}
+table tr.altRow td {
+  background: #f4f4f4;
+}
+
+/*end tables*/
+
+/* Dashboard */
+
+.dashboard_box{
+  height:200px;
+}
+
+p.feeback{
+  clear:both;
+  padding: 3px 0;
+  width: 100%;
+  text-align:center;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin-top:15px;
+  font-size:11pt;
+  color:#757575;
+}
+
+span.negative{
+  color: red;
+}
+
+span.positive{
+  color: green;
+}
+
+/* Twitter */
+
+#twitter_search h3 * {
+  display:inline;
+}
+
+#twitter_search h3 input {
+  float:right;
+  margin:0;
+}
+
+.tweets {
+  overflow-y:scroll;
+  height:300px;
+}
+
+.tweets .even, .search_tweets .even{
+  background-color:#ddd;
+}
+.tweet{
+  padding:15px;
+  font-size:10px;
+}
+.tweet .body{
+  height:75px;
+  text-align:justify;
+}
+.tweet .author{
+  color:#25AAE1;
+  text-align:left;
+}
+.tweet .date{
+  color:#757575;
+  float:left;
+  font-size:9px;
+}
+.tweet .actions{
+  float:right;
+  clear:right;
+}
+
+.tweets .actions img:hover, .search_tweets .actions img:hover{
+  background-color:#fff;
+}
+
+#search_pagination_down {
+  margin-top: 10px;
+}
+
+/* Clearing floats without extra markup
+Based on How To Clear Floats Without Structural Markup by PiE
+[http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix, .container {display: inline-block;}
+* html .clearfix,
+  * html .container {height: 1%;}
+  .clearfix, .container {display: block;}
+
+  /*Profile*/
+  #profile table{
+    border-bottom:1px solid #D1D1D1;
+    clear:left;
+    margin-bottom:18px;
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+#profile table tr:hover{
+  background:none repeat scroll 0 0 #ccc;
+}
+
+#profile th, #profile td{
+  border-top:1px solid #D1D1D1;
+  max-width:200px;
+  padding:6px;
+  vertical-align:top;
+}
+
+#profile h2{
+  margin-top:-20px;
+}
+
+#profile img{
+  border-style:none;
+}
+
+#profile dl dt{
+  width:100px;
+  float:left;
+  clear:left;
+  font-weight:bold;
+  margin-bottom:2px;
+}
+
+
+#profile dl dd{
+  float:left;
+}
+
+/*update box*/
+
+/*update status can be a bit smaller*/
+
+
+/*User Groups*/
+div.users{
+  width:auto;
+  padding:10px;
+  clear:both;
+}
+div.users input{
+  float:left;
+  margin-right:10px;
+}
+div.users:hover{
+  background-color:#EFF2FF;
+}
+
+/*subscriptions*/
+dl.subscription{
+  clear:both;
+}
+dl.subscription dt{
+  width:175px;
+  float:left;
+  font-weight:bold;
+}
+dl.subscription dd{
+  float:left;
+}
+p.unsubscribe{
+  margin-top:20px;
+}
+
+/*invitations*/
+.resend_invitations h4 a{
+  color:#fff;
+}
+
+/*  chart table ----->  by cubus ------- */
+
+
+/*annotatedtimelinetable for google graph visual*/
+
+.annotatedtimelinetable{
+  background: #EBEBEB;
+  border: 1px solid #CCC;
+  color: #333;
+  padding: 10px 20px;
+}
+
+#annotationsDiv1 table{
+  margin:0px;
+}
+
+/* The scroll up and down buttons */
+.goog-custom-button .icon-up,
+.goog-custom-button .icon-down {
+  display: block;
+}
+.chartclient-button-down.goog-custom-button, .chartclient-button-up.goog-custom-button {
+  width: 100% !important;
+  height: 20px !important;
+  border: 1px solid gray;
+}
+.chartclient-button-down.goog-custom-button {
+  margin: 3px 0 1px 0;
+}
+.chartclient-button-up.goog-custom-button {
+  margin: 1px 0 3px 0;
+}
+.chartclient-button-down.goog-custom-button-disabled, .chartclient-button-up.goog-custom-button-disabled {
+  background-image: none;
+  background-color: #ddd;
+  opacity: 0.4;
+}
+.annotationsdiv {
+  padding: 0 0 4px 4px;
+  font-size: 10pt;
+}
+
+
+.chartclient-annotation-sel{
+  width:190px !important;
+}
+
+.chartclient-annotation{
+  width:190px !important;
+}
+
+/*Scrollinglist*/
+.icon-up{
+  height: 18px !important;
+  width: 170px !important;
+}
+.icon-down{
+  height: 18px !important;
+  width: 70px !important;
+
+}
+
+#scrollingListTd div{
+  height:240px !important;
+}
+
+#scrollingListTd div div{
+  height:auto !important;
+}
+
+/*table.chart td strong {display: block;}*/
+
+table.chart a {
+  display:block;
+  text-align: center;
+  background-color: #C4D5DC;
+  color:#666666;
+  padding:5px;
+}
+table.chart a:hover { background-color: #659BB2; color:white;}
+table.chart a:active { background-color: #659BB2;color:white;}
+table.chart a:focus { background-color: #659BB2;color:white;}
+table.chart a.active { background: #659BB2; color:white;}
+table.chart th, table.chart td {padding:1px;}
+
+div.trackselection {
+  -moz-border-radius: 0 0 8px 8px;
+  background:none repeat scroll 0 0 #E9E9E9;
+  border:1px solid #D9D9D9;
+  color:#999999;
+  float:left;
+  padding:5px;
+  text-align:left;
+  width:99%;
+  margin-top:10px;
+}
+
+p#tracksheader {color:#333; float:left; font-size:1.1em; width:50px; -moz-border-radius: 0 0 3px; -webkit-border-radius: 0 0 3px;}
+p.track_listing {float:left; width:210px;}
+
+.input_name{
+  margin-right:70px;
+}
+
+
+/*settings*/
+.settings dt{
+  width:120px;
+  font-weight:bold;
+  float:left;
+  clear:left;
+  padding:1px 0;
+}
+
+.settings dd{
+  float:left;
+  width:300px;
+}
+
+
+/*messages*/
+.messages .network{
+  width:12px;
+}
+.messages .even{
+  background-color:#EEE;
+}
+.messages td.network{
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+.messages td.twitter{
+  background-image: url('/images/icons/twitter.png');
+}
+.messages td.facebook{
+  background-image: url('/images/icons/facebook.png');
+}
+
+/*homepage*/
+#home-register {
+  margin-left: 5px;
+  margin-top: 20px;
+  padding-top: 25px;
+  width: 140px;
+}
