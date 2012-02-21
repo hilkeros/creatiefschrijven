@@ -5,7 +5,7 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -35,4 +35,9 @@ gem "tabs_on_rails"
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
+end
+
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
 end
