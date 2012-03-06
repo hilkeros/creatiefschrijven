@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'blueprint/blueprint'
-require 'blueprint/validator'
+require_relative 'blueprint/blueprint'
+require_relative 'blueprint/validator'
 
 # This script will validate the core Blueprint files. 
 # 
